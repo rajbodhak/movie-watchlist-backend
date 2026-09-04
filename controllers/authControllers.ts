@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import { Request, Response } from "express";
 import { db } from "../src/prisma/db";
 import bcrypt from "bcrypt";
 import { generateToken } from "../utils/generateToken";

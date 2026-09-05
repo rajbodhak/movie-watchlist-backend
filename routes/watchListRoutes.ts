@@ -9,6 +9,6 @@ watchListRouter.use(authenticate);
 
 watchListRouter.get("/", getUserWatchlist);
 watchListRouter.post("/", addMovieToWatchlist);
-watchListRouter.delete("/", deleteMovieFromWatchlist);
+watchListRouter.delete("/:movieId", deleteMovieFromWatchlist);
 
 export default watchListRouter;

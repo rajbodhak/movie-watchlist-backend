@@ -77,7 +77,7 @@ const deleteMovieFromWatchlist = async (
 ) => {
     try {
         const userId = req.user.id;
-        const { movieId } = req.body;
+        const { movieId } = req.params as { movieId: string };
 
         const watchlistItem = await db.orm.public.WatchlistItem
             .where({ userId, movieId })

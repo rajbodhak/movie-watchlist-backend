@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 //Routers
 app.use("/users", userRouter);
 app.use("/auth", authRouter);
-app.use("watchlist", watchListRouter);
+app.use("/watchlist", watchListRouter);
 
 app.get("/", (req, res) => {
     res.json({
